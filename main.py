@@ -1,10 +1,11 @@
 import asyncio
 import logging
+import os
 from aiogram import Bot, Dispatcher, Router
 from aiogram.filters import Command
 from aiogram.types import Message
 
-TOKEN = "907230356:AAE6ZQ9y0vCfLFMxOmSEQYpDhOkKOEyq4"
+TOKEN = os.environ["BOT_TOKEN"]
 
 router = Router()
 
@@ -22,4 +23,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-
